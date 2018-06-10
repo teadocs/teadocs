@@ -45,7 +45,7 @@ program
 program
     .command('init')
     .description('generate documents required in an empty directory')
-    .action((dir = '.', {}) => { 
+    .action((dir = '.') => { 
         init(path.resolve(dir))
     })
 
