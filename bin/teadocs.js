@@ -43,9 +43,10 @@ program
     })
 
 program
-    .command('init')
+    .command('init [targetDir]')
     .description('generate documents required in an empty directory')
-    .action((dir = '.') => { 
+    .action((dir = '.') => {
+        console.log(dir);
         init(path.resolve(dir))
     })
 
