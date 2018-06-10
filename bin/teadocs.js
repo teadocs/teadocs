@@ -43,12 +43,10 @@ program
     })
 
 program
-    .command('init [targetDir]')
+    .command('init')
     .description('generate documents required in an empty directory')
-    .option('-d, --dest <outDir>', 'specify build output dir (default: ./dist)')
-    .action((dir = '.', { dest }) => {
-        const outDir = dest ? path.resolve(dest) : null
-        init(path.resolve(dir), { outDir })
+    .action((dir = '.', {}) => { 
+        init(path.resolve(dir))
     })
 
 // output help information on unknown commands
@@ -70,6 +68,11 @@ program.on('--help', () => {
 program.commands.forEach(c => c.on('--help', () => console.log()))
 
 program.parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+    program.outputHelp()
+    process.exit(1)
+}
 
 function wrapCommand(fn) {
     return (...args) => {
