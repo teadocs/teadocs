@@ -42,7 +42,11 @@
 		margin: auto;
 		z-index: 998;
 		background: rgba(0, 0, 0, 0.5);
-	}
+    }
+
+    .loading-warp { 
+        display: none;
+    }
 }
 
 @media (min-width:415px) and (max-width: 1024px) {
@@ -89,5 +93,9 @@
 		margin: auto;
 		z-index: 998;
 		background: rgba(0, 0, 0, 0.5);
-	}
+    }
+    
+    .loading-warp { 
+        display: none;
+    }
 }
