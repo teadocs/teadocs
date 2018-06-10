@@ -1,0 +1,39 @@
+{
+  "name": "teadocs",
+  "version": "0.0.1",
+  "description": "Teadocs is a quick and easy WEB document setup tool",
+  "main": "index.js",
+  "bin": {
+    "teadocs": "bin/teadocs.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisniuse/teadocs.git"
+  },
+  "author": "lisniuse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lisniuse/teadocs/issues"
+  },
+  "homepage": "https://github.com/lisniuse/teadocs#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.15.1",
+    "ejs": "^2.6.1",
+    "fs-extra": "^6.0.1",
+    "html-minifier": "^3.5.16",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.3",
+    "marked": "^0.4.0",
+    "open": "^0.0.5",
+    "semver": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
