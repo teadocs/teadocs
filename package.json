@@ -18,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/lisniuse/teadocs/issues"
   },
+  "keywords": "nodejs, javascript, documentation, generator",
   "homepage": "https://github.com/lisniuse/teadocs#readme",
   "dependencies": {
     "chalk": "^2.4.1",
