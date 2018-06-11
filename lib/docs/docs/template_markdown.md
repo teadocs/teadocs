@@ -4,12 +4,12 @@
 
 ```javascript
 &lt;% [1,2,3,4].forEach(function () { %&gt;	
-### 欢迎使用Teadocs文档生成工具
+- 欢迎使用Teadocs文档生成工具
 &lt;% }) %&gt;
 ```
 
 效果：
 
 <% [1,2,3,4].forEach(function () { %>
-### 欢迎使用Teadocs文档生成工具
+- 欢迎使用Teadocs文档生成工具
 <% }) %>
