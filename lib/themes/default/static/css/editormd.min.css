@@ -3137,11 +3137,11 @@
 }
 
 .markdown-body li:after {
-    position: absolute;
+	position: absolute;
     left: -20px;
-    top: 8px;
+    top: 7px;
     content: '';
-    height: 7px;
+    height: 8px;
     width: 8px;
     border-radius: 50%;
     background-color: #77dab2;
