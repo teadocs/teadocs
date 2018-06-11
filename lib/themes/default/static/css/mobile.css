@@ -51,7 +51,7 @@
 }
 
 @media (min-width:415px) and (max-width: 1024px) {
-  .main {
+	.main {
     height: auto;
   }
   .main .tea-menu {
@@ -90,11 +90,12 @@
     background: rgba(0, 0, 0, 0.5);
   }
   .mask .search-popup {
-    width: 83%;
+    width: 100%;
+		height:100%;
+		border-radius: 0;
   }
   .mask .search-popup .search-popup-body {
-    min-height: 300px;
-    max-height: 340px;
+    height: 100%;
   }
   .mask .search-popup .search-popup-body .search-result {
     padding: 0px 10px;
