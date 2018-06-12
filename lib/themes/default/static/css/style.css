@@ -160,6 +160,9 @@ ul li a {
     z-index: 999;
     border-bottom: 1px solid rgb(243, 243, 243);
 }
+.main .tea-nav .top-title span{
+  margin-left:12px;
+}
 
 .main .tea-menu .tea-menu-search-warp {
     text-align: center;
