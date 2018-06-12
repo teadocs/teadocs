@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/mobile.css">
     <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/highlight.default.min.css">
-
     <script src="<%- __ROOT_PATH__ %>static/js/highlight.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.1.1/socket.io.js"></script>
     <script>
         window._CONST = {
             THEME_DIR: '{{_CONST.THEME_DIR}}'
         }
-        hljs.initHighlightingOnLoad();
+        hljs.initHighlightingOnLoad(); 
     </script>
 </head>
 
@@ -79,7 +79,21 @@
     </div>
     <script src="<%- __ROOT_PATH__ %>static/js/main.js"></script>
     <script src="<%- __ROOT_PATH__ %>static/js/mobile.js"></script>
+    <script>
+        console.log("ws://" + window.location.host + "/websocket");
+        (function () {
+            if ("WebSocket" in window) {
+                //var socket = io.connect("ws://" + window.location.host + "/websocket",{
+                var socket = io.connect(window.location.host);       
+                socket.on('news', function (data) {      
+                    alert(data.hello);
+                    socket.emit('my other event', { my: 'data' });  
+                });
+            }
+        })();
+    </script>
     <%- __FOOT_HTML__ %>
+
 </body>
 
 </html>

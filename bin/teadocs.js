@@ -14,7 +14,7 @@ if (!semver.satisfies(process.version, requiredVersion)) {
 }
 
 const path = require('path')
-const serve = require('../lib/serve')
+const dev = require('../lib/dev')
 const build = require('../lib/build')
 const init = require('../lib/init')
 
@@ -25,12 +25,12 @@ program
     .usage('<command> [options]')
 
 program
-    .command('serve [targetDir]')
-    .description('start development server')
+    .command('dev [targetDir]')
+    .description('start development server and listen for file changes automatically compiled.')
     .option('-p, --port <port>', 'use specified port (default: 8080)')
     .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
     .action((dir = '.', { host, port }) => {
-        wrapCommand(serve)(path.resolve(dir), { host, port })
+        dev.dev(path.resolve(dir), { host, port })
     })
 
 program
