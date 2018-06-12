@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <%- __HEAD_HTML__ %>
-    <title><%- __CUR_TITLE__ %> - <%- __DOC_NAME__ %></title>
-    <script src="<%- __ROOT_PATH__ %>/static/js/jquery-3.3.1.min.js"></script>
-    <script src="<%- __ROOT_PATH__ %>/static/js/vue.min.js"></script>
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/normalize.min.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/monaco.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/loading.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/editormd.min.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/style.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/mobile.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>/static/css/highlight.default.min.css">
+    <meta name="description" content="{{_CONST.SEO_DESC}}" />
+    <meta name="keywords" content="{{_CONST.SEO_KEYWORDS}}" />
+    <title>{{_CONST.SITE_TITLE}} - {{title}}</title>
+    <script src="/public/{{_CONST.THEME_DIR}}/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/public/{{_CONST.THEME_DIR}}/static/js/vue.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/monaco.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/loading.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/editormd.min.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/style.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/mobile.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/{{_CONST.THEME_DIR}}/static/css/highlight.default.min.css">
 
-    <script src="<%- __ROOT_PATH__ %>/static/js/highlight.min.js"></script>
+
+    <script src="/public/{{_CONST.THEME_DIR}}/static/js/highlight.min.js"></script>
     <script>
         window._CONST = {
             THEME_DIR: '{{_CONST.THEME_DIR}}'
@@ -47,28 +49,24 @@
         <div class="tea-menu">
             <div class="tea-menu-title">
                 <i class="fa fa-home" aria-hidden="true"></i>
-                <span><%- __DOC_NAME__ %></span>
+                <span>{{_CONST.DOC_NAME}}</span>
             </div>
             <div class="tea-menu-search-warp">
                 <i class="fa fa-search"></i>
                 <input type="text" placeholder="搜索文档" value="" height="100%">
             </div>
-            <%- __NAV_HTML__ %>
-            <div class="tea-version">
-                <p>version: <%- __DOC_VERSION__ %></p>
-                <p>Built with <a href="https://github.com/lisniuse/teadocs" target="_blank">Teadocs</a></p>
-            </div>
+            {{menuList}}
         </div>
         <div class="tea-content">
             <div class="tea-nav">
                 <h3 class="top-title" style="font-weight: 500; margin: 0px;font-size: 16px">
                     <i class="fa fa-navicon" aria-hidden="true"></i>
-                    <span><%- __CUR_TITLE__ %></span>
+                    <span>{{title}}</span>
                 </h3>
             </div>
             <div class="tea-container">
                 <div class="markdown-body">
-                    <%- __MARKDOWN_CONTENT__ %>
+                    {{content}}
                 </div>
             </div>
         </div>
@@ -77,9 +75,9 @@
         <!-- mask -->
         <div id="menu-mask"></div>
     </div>
-    <script src="<%- __ROOT_PATH__ %>/static/js/main.js"></script>
-    <script src="<%- __ROOT_PATH__ %>/static/js/mobile.js"></script>
-    <%- __FOOT_HTML__ %>
+    <script src="/public/{{_CONST.THEME_DIR}}/static/js/main.js"></script>
+    <script src="/public/{{_CONST.THEME_DIR}}/static/js/mobile.js"></script>
+    {{_CONST.BOTTOM_CODE}}
 </body>
 
 </html>

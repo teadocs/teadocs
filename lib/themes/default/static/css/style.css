@@ -105,7 +105,7 @@ ul li a {
 }
 
 .main .tea-menu-list li .item-title {
-    
+
 }
 
 .main .tea-menu-list li  a {
@@ -160,6 +160,9 @@ ul li a {
     z-index: 999;
     border-bottom: 1px solid rgb(243, 243, 243);
 }
+.main .tea-nav .top-title span{
+  margin-left:12px;
+}
 
 .main .tea-menu .tea-menu-search-warp {
     text-align: center;
@@ -198,6 +201,21 @@ ul li a {
     height: calc(100vh - 57px);
     overflow-y: auto;
     box-sizing: border-box;
+}
+
+.main .gotop{
+  position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    font-size: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.main .active{
+  opacity: 1;
+  visibility: visible;
 }
 
 .markdown-body {

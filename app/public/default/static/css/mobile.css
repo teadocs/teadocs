@@ -38,23 +38,19 @@
     background: rgba(0, 0, 0, 0.5);
   }
   .mask .search-popup {
-    width: 100%;
-		height:100%;
-		border-radius: 0;
+    width: 83%;
   }
   .mask .search-popup .search-popup-body {
-    max-height: 94%;
+    min-height: 300px;
+    max-height: 340px;
   }
   .mask .search-popup .search-popup-body .search-result {
     padding: 0px 10px;
   }
-	.markdown-body{
-		padding:15px 10px ;
-	}
 }
 
 @media (min-width:415px) and (max-width: 1024px) {
-	.main {
+  .main {
     height: auto;
   }
   .main .tea-menu {
@@ -92,18 +88,4 @@
     z-index: 998;
     background: rgba(0, 0, 0, 0.5);
   }
-  .mask .search-popup {
-    width: 100%;
-		height:100%;
-		border-radius: 0;
-  }
-  .mask .search-popup .search-popup-body {
-    max-height: 94%;
-  }
-  .mask .search-popup .search-popup-body .search-result {
-    padding: 0px 10px;
-  }
-	.markdown-body{
-		padding:15px 10px ;
-	}
 }
