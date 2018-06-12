@@ -14,28 +14,28 @@ $ npm install -g teadocs
 ### usage
 
 #### step 1
-Create a new folder
+Initialize a new document project
 
 ```
-$ mkdir mydocs
+$ teadcos init mydocs
 ```
 
-#### step2
+#### step 2
 Go to this folder
 
 ```
 $ cd mydocs
 ```
 
-#### step4
+#### step 3
 
-The command pulls the template from default docs, and generates the project at  ``./mydocs``
+This step is to enter the document editing mode, this mode will monitor the markdown file changes in real-time hot replacement of html pages.
 
 ```
-$ teadocs init
+$ teadocs dev
 ```
 
-#### step5
+#### Automatically generate md
 If you want to be lazy, you can run this command again. This command will automatically generate the relevant ``markdown file`` from ``tree.html``.
 
 ```
@@ -47,14 +47,6 @@ Build from ``./mydocs``
 ```
 $ teadocs build
 ```
-
-#### local preview
-if you need a simple web server for previewing:
-```
-$ teadocs serve
-```
-it will create a web server as the root in your configured build directory.
-
 
 ## LICENSE
 
