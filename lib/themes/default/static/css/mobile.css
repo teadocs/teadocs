@@ -80,8 +80,9 @@
     font-size: 18px !important;
   }
   .tea-container {
-    height: auto;
-    padding: 5px 0;
+    /* height: auto; */
+    padding: 10px 0;
+    box-sizing: border-box;
     margin-top: 55px;
   }
   #menu-mask {

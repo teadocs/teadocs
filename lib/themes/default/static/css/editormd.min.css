@@ -3129,7 +3129,7 @@
     line-height: 1.7;
 }
 
-.markdown-body li {
+.markdown-body ul li {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
@@ -3137,7 +3137,7 @@
 	margin-top: 5px;
 }
 
-.markdown-body li:after {
+.markdown-body ul li:after {
 	position: absolute;
     left: -20px;
     top: 7px;
@@ -3154,7 +3154,7 @@
 }
 
 .markdown-body blockquote {
-	margin: 0
+	margin: 0;
 }
 
 .markdown-body ol ol,.markdown-body ul ol {
@@ -3332,9 +3332,11 @@
 }
 
 .markdown-body blockquote {
-	padding: 0 15px;
+	padding: 15px;
 	color: #777;
-	border-left: 4px solid #ddd
+	border-left: 8px solid #678;
+	background-color: #fff;
+    box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
 }
 
 .markdown-body blockquote>:first-child {
