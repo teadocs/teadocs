@@ -3106,7 +3106,7 @@
 
 .markdown-body a {
 	background: 0 0;
-	color: #4183c4;
+	color: #9eaab6;
 	text-decoration: none
 }
 
@@ -3134,6 +3134,7 @@
 	padding: 0px;
 	margin: 0px;
 	position: relative;
+	margin-top: 5px;
 }
 
 .markdown-body li:after {
@@ -3378,15 +3379,20 @@
 	box-sizing: border-box
 }
 
-.markdown-body code {
+.markdown-body code:not(.hljs) {
 	margin: 0;
-    background: #f8f9fa;
-    color: #14af83;
+	background: #f8f9fa;
+	color: #14af83;
     font-weight: 100;
     padding:2px;
     border-radius: 3px;
     box-shadow: 0 0px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
 }
+
+/* .markdown-body p code,
+.markdown-body li code {
+    color: #14af83;
+} */
 
 .markdown-body code:after,.markdown-body code:before {
 	letter-spacing: -.2em;

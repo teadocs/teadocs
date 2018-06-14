@@ -96,16 +96,12 @@ ul li a {
     top: 0px;
     width: 30px;
     color: #E0E0E0;
-    height: 32px;
+    height: 37px;
     transition: all .5s;
 }
 
 .main .tea-menu-list li a > i.fa.fa-angle-down:hover {
     color: #333;
-}
-
-.main .tea-menu-list li .item-title {
-
 }
 
 .main .tea-menu-list li  a {
@@ -252,6 +248,7 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none; 
 }
 
 .mask {
