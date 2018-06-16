@@ -82,6 +82,16 @@ ul li a {
     cursor: pointer;
 }
 
+.main .tea-menu-list li ul {
+    overflow: hidden;
+    display: none;
+    transition: max-height 0.5s;
+}
+
+.main .tea-menu-list li ul.unfold {
+    display: block;
+}
+
 .main .tea-menu-list li a > i.fa.fa-angle-down.unfold {
     transform: rotate(-180deg);
 }
