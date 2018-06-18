@@ -3104,6 +3104,13 @@
 	box-sizing: border-box
 }
 
+.markdown-body .warning-warp {
+    background-color: #fff6f6;
+	border: 1px solid #f66;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
 .markdown-body a {
 	background: 0 0;
 	color: #9eaab6;
@@ -3129,8 +3136,11 @@
     line-height: 1.8;
 }
 
-.markdown-body ul li {
+.markdown-body ul li { 
 	list-style: none;
+}
+
+.markdown-body ul li, .markdown-body ol li {
 	padding: 0px;
 	margin: 0px;
 	position: relative;
@@ -3139,8 +3149,8 @@
 
 .markdown-body ul li:after {
 	position: absolute;
-    left: -20px;
-    top: 7px;
+    left: -16px;
+    top: 9px;
     content: '';
     height: 8px;
     width: 8px;
@@ -3311,7 +3321,7 @@
 }
 
 .markdown-body ol,.markdown-body ul {
-	font-size: 12px;
+	font-size: 14px;
 	padding-left: 2em
 }
 
