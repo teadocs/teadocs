@@ -1,6 +1,13 @@
 # Teadocs
 > Teadocs is a quick and easy WEB document setup tool.
 
+[![NPM](https://nodei.co/npm/teadocs.png)](https://nodei.co/npm/teadocs/)
+
+![npm](https://img.shields.io/npm/dw/teadocs.svg)
+![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/atlassian/adf-builder-javascript.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg) 
+![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)
+
 ## Getting Started
 
 ### installation
