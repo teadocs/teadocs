@@ -1,55 +1,48 @@
 # 快速入门
 
-## installation
+## 安装它
 
-Prerequisites: Nodejs(>=8.0), npm version 3+.
-
+需要nodejs版本 >= 8.0，npm 版本 > 3.
 ```
 $ npm install -g teadocs
 ```
 
-## usage
+## 使用它
 
-### step 1
-Create a new folder
+### 第一步
+
+初始化一个文档项目
 
 ```
-$ mkdir mydocs
+$ teadcos init mydocs
 ```
 
-### step2
-Go to this folder
+### 第二步
+
+进入这个文档目录
 
 ```
 $ cd mydocs
 ```
 
-### step4
+### 第三步
 
-The command pulls the template from default docs, and generates the project at  ``./mydocs``
+此步骤是进入文档编辑模式（开发模式），此模式将监视markdown文件的变化，实时热替换html页面。
+
+```
+$ teadocs dev
+```
+
+### 自动生成项目初始结构
+
+如果你想偷懒，那么你可以在编写好tree.md（菜单的配置文件）的情况下，直接运行以下命令，teadocs可以自动帮你生成md文件。
 
 ```
 $ teadocs init
 ```
 
-### step5
-If you want to be lazy, you can run this command again. This command will automatically generate the relevant ``markdown file`` from ``tree.html``.
+### 编译成html
 
-```
-$ teadocs init
-```
-
-## build docs
-Build from ``./mydocs``
 ```
 $ teadocs build
 ```
-
-## local preview
-if you need a simple web server for previewing:
-```
-$ teadocs serve
-```
-it will create a web server as the root in your configured build directory.
-
-

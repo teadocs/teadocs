@@ -2,7 +2,7 @@
 
 ```
 testdocs
-├─ build # This is the directory where the generated document is located.
+├─ build  #这个是编译输出的目录
 │    ├─ config
 │    │    ├─ main.html
 │    │    ├─ nav.html
@@ -14,14 +14,13 @@ testdocs
 │    ├─ install.html
 │    ├─ quick_start.html
 │    ├─ static
-│    │    ├─ .DS_Store
 │    │    ├─ css
 │    │    ├─ font-awesome-4.7.0
 │    │    ├─ fonts
 │    │    ├─ images
 │    │    └─ js
 │    └─ template_markdown.html
-├─ docs # This is the directory of the default markdown document.
+├─ docs #这个是文档的源文件目录，也就是markdown文件目录。
 │    ├─ config
 │    │    ├─ main.md
 │    │    ├─ nav.md
@@ -32,8 +31,8 @@ testdocs
 │    ├─ install.md
 │    ├─ quick_start.md
 │    └─ template_markdown.md
-├─ static # This is a static file directory, After the document is generated, it will becopied to the generated static file directory.
+├─ static # 这个地方是用于存放文档中需要用要的静态文件，例如图片等，它会自动copy到build目录下。
 |
-├─ teadocs.config.js # This is the main configuration file for teadocs
-└─ tree.html # This is the document's menu configuration file
+├─ teadocs.config.js # 这是teadocs的主配置文件
+└─ tree.html # 这是文档的菜单配置文件
 ```
