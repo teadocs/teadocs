@@ -14,4 +14,6 @@ Teadocs 会自动根据你编写的markdown文档自动生成html文档，并且
 
 ## 贡献
 
+github地址：[https://github.com/lisniuse/teadocs](https://github.com/lisniuse/teadocs)
+
 如果你想贡献代码，我们建议你先fork阅读Teadocs的源码，然后push你的idea。
