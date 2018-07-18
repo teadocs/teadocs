@@ -11,7 +11,7 @@
 ## Documentation
 
 - 中文: http://docs.teadocs.cn/cn
-- 英文: http://docs.teadocs.cn/en
+- english: http://docs.teadocs.cn/en
 
 ## Getting Started
 
