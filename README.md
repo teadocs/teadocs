@@ -8,6 +8,11 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg) 
 ![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)
 
+## Documentation
+
+- 中文: http://docs.teadocs.cn/cn
+- 英文: http://docs.teadocs.cn/en
+
 ## Getting Started
 
 ### installation
