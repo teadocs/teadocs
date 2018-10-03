@@ -41,7 +41,6 @@ ul li a {
 }
 
 .main {
-    position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -165,7 +164,12 @@ ul li a {
     z-index: 999;
     border-bottom: 1px solid rgb(243, 243, 243);
 }
-.main .tea-nav .top-title span{
+
+.main .tea-nav .top-title i {
+    cursor: pointer;
+}
+
+.main .tea-nav .top-title span {
   margin-left:12px;
 }
 
@@ -419,3 +423,4 @@ ul li a {
     font-weight: bold;
     color: #f00;
 }
+
