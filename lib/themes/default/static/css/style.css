@@ -215,7 +215,7 @@ ul li a {
 .main .gotop{
   position: fixed;
     bottom: 32px;
-    right: 32px;
+    right: 430px;
     z-index: 999;
     font-size: 40px;
     opacity: 0;
