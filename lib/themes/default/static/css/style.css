@@ -13,7 +13,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #0ae;
+    background-color: #7896b5;
     border-radius: 10px;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
 }
@@ -25,7 +25,6 @@ body {
 ul {
     margin-left: 0px;
     padding-left: 15px;
-    font-size: 13px;
 }
 
 ul li a {
@@ -42,7 +41,6 @@ ul li a {
 }
 
 .main {
-    position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -80,6 +78,16 @@ ul li a {
     display: block;
     position: relative;
     cursor: pointer;
+}
+
+.main .tea-menu-list li ul {
+    overflow: hidden;
+    display: none;
+    transition: max-height 0.5s;
+}
+
+.main .tea-menu-list li ul.unfold {
+    display: block;
 }
 
 .main .tea-menu-list li a > i.fa.fa-angle-down.unfold {
@@ -156,7 +164,12 @@ ul li a {
     z-index: 999;
     border-bottom: 1px solid rgb(243, 243, 243);
 }
-.main .tea-nav .top-title span{
+
+.main .tea-nav .top-title i {
+    cursor: pointer;
+}
+
+.main .tea-nav .top-title span {
   margin-left:12px;
 }
 
@@ -215,10 +228,12 @@ ul li a {
 }
 
 .markdown-body {
-    background-color: #f1f3f5;
-    padding: 30px 80px;
+    background-color: #fff;
+    padding: 30px 50px;
     box-sizing: border-box;
     min-height: 1000px;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .markdown-body a.header-anchor {
@@ -408,3 +423,4 @@ ul li a {
     font-weight: bold;
     color: #f00;
 }
+
