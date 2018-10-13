@@ -4,7 +4,8 @@
   }
   .main .tea-menu {
     position: fixed;
-    display: none;
+    /* display: none; */
+    left:-250px;
     z-index: 999;
     padding-top: 70px;
   }
@@ -27,7 +28,7 @@
     margin-top: 55px;
   }
   .main .gotop{
-    left:32px;
+    right:32px;
   }
   #menu-mask {
     display: none;
@@ -89,7 +90,7 @@
     margin-top: 55px;
   }
   .main .gotop {
-    left: 32px;
+    right: 32px;
   }
   #menu-mask {
     display: none;
