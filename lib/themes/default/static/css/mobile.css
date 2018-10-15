@@ -28,6 +28,7 @@
     margin-top: 55px;
   }
   .main .gotop{
+    left: unset;
     right:32px;
   }
   #menu-mask {
@@ -66,7 +67,8 @@
   }
   .main .tea-menu {
     position: fixed;
-    display: none;
+    /* display: none; */
+    left:-250px;
     z-index: 999;
     padding-top: 70px;
   }
@@ -90,6 +92,7 @@
     margin-top: 55px;
   }
   .main .gotop {
+    left: unset;
     right: 32px;
   }
   #menu-mask {
