@@ -350,6 +350,7 @@ ul li a {
     max-height: 500px;
     width: 100%;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mask .search-popup
