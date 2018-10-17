@@ -231,7 +231,7 @@ ul li a {
     background-color: #fff;
     padding: 30px 50px;
     box-sizing: border-box;
-    min-height: 1000px;
+    min-height: 100%;
     max-width: 900px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
