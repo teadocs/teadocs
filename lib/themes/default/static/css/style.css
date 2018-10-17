@@ -212,7 +212,8 @@ ul li a {
     box-sizing: border-box;
 }
 
-.main .gotop{
+.main .gotop {
+    border-radius: 50%;
     position: fixed;
     bottom: 32px;
     left: 1160px;
@@ -221,9 +222,15 @@ ul li a {
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    cursor: pointer;
 }
+
+.main .gotop.active:hover {
+    opacity: 1;
+}
+
 .main .gotop.active {
-  opacity: 1;
+  opacity: 0.8;
   visibility: visible;
 }
 
