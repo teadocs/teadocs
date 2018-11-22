@@ -1,6 +1,6 @@
 {
   "name": "teadocs",
-  "version": "0.2.6",
+  "version": "0.2.8",
   "description": "Teadocs is a quick and easy WEB document setup tool",
   "main": "index.js",
   "bin": {
