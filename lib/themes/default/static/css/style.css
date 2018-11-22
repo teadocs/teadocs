@@ -9,17 +9,17 @@ body {
 *::-webkit-scrollbar {
     width: 6px;
     height: 6px;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #e0e0e0;
+    background-color: #b9b9b9;
     border-radius: 10px;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
 }
 
 *::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
+    background-color: #ffffff;
 }
 
 ul {
