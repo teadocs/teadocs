@@ -1,5 +1,10 @@
 body {
-    font: 13px/21px "Microsoft YaHei","宋体", 'Myriad Pro','Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #3f536e;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
 }
 
 *:not(i) {
@@ -7,15 +12,15 @@ body {
 }
 
 *::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
     height: 6px;
     background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #b9b9b9;
-    border-radius: 10px;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    background-color: #798898;
+    border-radius: 100px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent)); */
 }
 
 *::-webkit-scrollbar-track {
@@ -125,12 +130,23 @@ ul li a {
 
 .main .tea-menu-list li a:hover {
     color: #333;
-    background-color: #f3f3f3;
+    background-color: #f7f7f7;
 }
 
 .main .tea-menu-list li a.active {
     color: #000;
-    background-color: #efefef;
+    background-color: #f7f7f7;
+    border-left: 6px solid #798898;
+    box-sizing: border-box;
+}
+
+.main .tea-menu-list .unfold li a:hover {
+    border-radius: 4px;
+}
+
+.main .tea-menu-list .unfold li a.active {
+    border: none;
+    border-radius: 4px;
 }
 
 .main .tea-menu .tea-menu-title {
