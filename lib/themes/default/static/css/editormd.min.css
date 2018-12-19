@@ -3372,7 +3372,8 @@
 	width: 100%;
 	overflow: auto;
 	word-break: normal;
-	word-break: keep-all
+	word-break: keep-all;
+	font-size: 14px;
 }
 
 .markdown-body table th {
@@ -3380,7 +3381,7 @@
 }
 
 .markdown-body table td,.markdown-body table th {
-	padding: 6px 13px;
+	padding: 6px 10px;
 	border: 1px solid #ddd
 }
 
