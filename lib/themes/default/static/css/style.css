@@ -137,6 +137,7 @@ ul li a {
     color: #000;
     background-color: #f7f7f7;
     border-left: 6px solid #798898;
+    padding-left: 12px;
     box-sizing: border-box;
 }
 
