@@ -148,6 +148,7 @@ ul li a {
 .main .tea-menu-list .unfold li a.active {
     border: none;
     border-radius: 4px;
+    padding-left: 20px;
 }
 
 .main .tea-menu .tea-menu-title {
