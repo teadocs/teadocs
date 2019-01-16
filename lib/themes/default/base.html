@@ -6,17 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        <%- __CUR_TITLE__ %> -
-        <%- __DOC_NAME__ %>
-    </title>
+    <title><%- __CUR_TITLE__ %> - <%- __DOC_NAME__ %></title>
     <%- __HEAD_HTML__ %>
     <script src="<%- __ROOT_PATH__ %>static/js/jquery-3.3.1.min.js"></script>
     <script src="<%- __ROOT_PATH__ %>static/js/vue.min.js"></script>
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/ant-design.css">
-    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/ant-markdown.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/normalize.min.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/monaco.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/loading.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/editormd.min.css">
     <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/style.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/mobile.css">
     <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<%- __ROOT_PATH__ %>static/css/highlight.default.min.css">
     <script src="<%- __ROOT_PATH__ %>static/js/highlight.min.js"></script>
     <script>
         window._CONST = {
@@ -27,27 +28,43 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header></header>
-        <div class="aside-container"></div>
-        <div class="main-wrapper">
-            <div class="main-container card">
-                <div class="btn-group">
-                    <ul>
-                        <li class="side-btn">关闭专注模式</li>
-                        <li class="side-btn">打开文档目录</li>
-                        <li class="site-btn">搜索内容</li>
-                    </ul>
-                </div>
-                <article class="markdown">
+    <div class="main">
+        <div class="tea-menu">
+            <div class="tea-menu-title">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span><%- __DOC_NAME__ %></span>
+            </div>
+            <div class="tea-menu-search-warp">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="搜索文档" value="" height="100%">
+            </div>
+            <%- __NAV_HTML__ %>
+            <div class="tea-version">
+                <p>version: <%- __DOC_VERSION__ %></p>
+                <p>Built with <a href="https://github.com/lisniuse/teadocs" target="_blank">Teadocs</a></p>
+            </div>
+        </div>
+        <div class="tea-content">
+            <div class="tea-nav">
+                <h3 class="top-title" style="font-weight: 500; margin: 0px;font-size: 16px">
+                    <i class="fa fa-navicon" aria-hidden="true"></i>
+                    <span><%- __CUR_TITLE__ %></span>
+                </h3>
+            </div>
+            <div class="tea-container">
+                <article class="markdown-body">
                     <%- __MARKDOWN_CONTENT__ %>
                 </article>
             </div>
         </div>
+        <!-- up to top -->
+        <i class="fa fa-arrow-circle-up gotop" aria-hidden="true"></i>
+        <!-- mask -->
+        <div id="menu-mask"></div>
     </div>
     <!-- <script src="<%- __ROOT_PATH__ %>data.js"></script> -->
-    <!-- <script src="<%- __ROOT_PATH__ %>static/js/main.js"></script>
-    <script src="<%- __ROOT_PATH__ %>static/js/mobile.js"></script> -->
+    <script src="<%- __ROOT_PATH__ %>static/js/main.js"></script>
+    <script src="<%- __ROOT_PATH__ %>static/js/mobile.js"></script>
     <%- __FOOT_HTML__ %>
 </body>
 
