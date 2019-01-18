@@ -1,4 +1,4 @@
-# Teadocs V1.0
+# Teadocs
 
 > Teadocs 简单快捷的Web文档生成工具。
 
@@ -8,6 +8,14 @@
 ![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/atlassian/adf-builder-javascript.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg) 
 ![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)
+
+# Teadocs V0.x
+
+目前的 v0.x 版本相对稳定，如果你想使用 Teadocs V0.x 版本，请看查看这个分支：https://github.com/teadocs/teadocs/tree/v0.x
+
+# Teadocs V1.x
+
+Teadocs V1.x 还在开发中。
 
 ## 一个标准文档的目录结构
 
