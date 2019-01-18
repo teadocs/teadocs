@@ -1,6 +1,6 @@
 # Teadocs V1.0
 
-> Teadocs是一种简单快捷的Web文档生成工具。
+> Teadocs 简单快捷的Web文档生成工具。
 
 [![NPM](https://nodei.co/npm/teadocs.png)](https://nodei.co/npm/teadocs/)
 
