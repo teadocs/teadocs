@@ -16,6 +16,8 @@ let baseApp = new Vue({
         }
     },
     methods: {
-
+        clickSearch() {
+            alert('搜索功能开发中');
+        }
     }
 });
