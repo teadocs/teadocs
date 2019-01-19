@@ -1,32 +1,63 @@
 .tea-nav {
-    width: 256px;
     height: 100%;
-    padding-top: 50px;
+    width: 256px;
     background-color: #fff;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: -256px;
     top: 0;
+    transition: 0.3s;
 
-    .btn {
+    &.show {
+        left: 0px;
+    }
+
+    .nav-inner {
+        width: 100%;
+
+        .doc-info {
+            padding: 20px;
+            text-align: center;
+
+            h2 {
+                font-weight: 600;
+            }
+        }
+
+        ul {
+            li {
+                padding: 10px;
+                padding-left: 24px;
+                padding-right: 15px;
+
+                &.active {
+                    background-color: #e6f7ff;
+                    border-right: 3px solid #1890ff;
+                }
+            }
+        }
+    }
+
+    .btn-group {
         position: absolute;
         right: -40px;
-        top:0px;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        line-height: 40px;
-        background-color: #fff;
-    }
-    
-    ul {
-        li {
-            padding: 10px;
-            padding-left: 24px;
-            padding-right: 15px;
-
-            &.active {
-                background-color: #e6f7ff;
-                border-right: 3px solid #1890ff;
+        top: 0px;
+        .btn {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #fff;
+            .icon {
+                position: relative;
+                top: 5px;
+                transition: .4s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+                &.right {
+                    transform: rotate(180deg);
+                }
             }
         }
     }
@@ -38,5 +69,5 @@
     background-color: #fff;
     min-height: 100vh;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
