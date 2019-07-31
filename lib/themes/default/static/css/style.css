@@ -277,6 +277,27 @@ ul li a {
     opacity: 1;
 }
 
+.page{
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    background: #fff;
+    overflow: hidden;
+}
+.page a{
+    color: #1890ff;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: none;
+}
+.page-prev {
+    float: left;
+}
+.page-next {
+    float: right;
+}
+
 .loading-warp {
     background-color: #fff;
     position: fixed;
