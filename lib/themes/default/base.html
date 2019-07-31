@@ -55,6 +55,15 @@
                 <article class="markdown-body">
                     <%- __MARKDOWN_CONTENT__ %>
                 </article>
+                <!-- turn page -->
+                <div class="page">
+                    <% if (__PREV_PAGE_HREF__) { %>
+                        <a class="page-prev" href="<%- __PREV_PAGE_HREF__ %>">上一章</a>
+                    <% } %> 
+                    <% if (__NEXT_PAGE_HREF__) { %>
+                        <a class="page-next" href="<%- __NEXT_PAGE_HREF__ %>">下一章</a>
+                    <% } %> 
+                </div>
             </div>
         </div>
         <!-- up to top -->
