@@ -223,7 +223,7 @@ ul li a {
 }
 
 .tea-container {
-    background-color: rgb(238, 238, 238);
+    background-color: #fff;
     width: 100%;
     height: calc(100vh - 57px);
     overflow-y: auto;
@@ -257,8 +257,9 @@ ul li a {
     padding: 30px 50px;
     box-sizing: border-box;
     min-height: 100%;
-    max-width: 900px;
+    width: calc(100% - 245px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    min-height: calc(100% - 81px);
 }
 
 .markdown-body a.header-anchor {
@@ -278,7 +279,7 @@ ul li a {
 }
 
 .page{
-    max-width: 900px;
+    width: calc(100% - 245px);
     box-sizing: border-box;
     padding: 30px 50px;
     background: #fff;
@@ -290,12 +291,52 @@ ul li a {
     border-color: transparent;
     box-shadow: none;
     text-decoration: none;
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .page-prev {
     float: left;
+    text-align: left;
 }
 .page-next {
     float: right;
+    text-align: right;
+}
+
+.toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: calc(100vh - 61px);
+    margin-top: 57px;
+    overflow: hidden;
+}
+.toc-affix {
+    max-height: calc(100% - 100px);
+    margin: 50px 0;
+    overflow: hidden;
+    padding: 0 40px 0 20px;
+}
+.toc-affix .toc-item {
+    font-size: 12px;
+    list-style: none;
+    border-left: 2px solid #ebedf0;
+    padding: 3px 0;
+}
+.toc-affix .toc-item-active {
+    border-left: 2px solid #009a61;
+    background-color: #ebedf0;
+}
+.toc-affix .toc-item-active a {
+    color: #009a61;
+}
+.toc-affix .text-elli {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .loading-warp {
