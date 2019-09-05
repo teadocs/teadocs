@@ -50,6 +50,30 @@
                     <i class="fa fa-navicon" aria-hidden="true"></i>
                     <span><%- __CUR_TITLE__ %></span>
                 </h3>
+                <!-- article meta: author、date、updated -->
+                <div class="article-meta">
+                    <% if (__ARTICLE_AUTHOR__) { %>
+                        <span title="作者">
+                            <i class="fa fa-user"></i>
+                            作者：
+                            <%- __ARTICLE_AUTHOR__ %>
+                        </span>
+                    <% } %>
+                    <% if (__ARTICLE_CREATE_DATETIME__) { %>
+                        <span title="发表于">
+                            <i class="fa fa-calendar"></i>
+                            发表于：
+                            <%- __ARTICLE_CREATE_DATETIME__ %>
+                        </span>
+                    <% } %>
+                    <% if (__ARTICLE_UPDATE_DATETIME__) { %>
+                        <span title="最近更新">
+                            <i class="fa fa-calendar"></i>
+                            最近更新：
+                            <%- __ARTICLE_UPDATE_DATETIME__ %>
+                        </span>
+                    <% } %>
+                </div>
             </div>
             <div class="tea-container">
                 <article class="markdown-body">
