@@ -27,19 +27,19 @@ program
 program
     .command('dev [targetDir]')
     .description('start development server and listen for file changes automatically compiled.')
-    .option('-p, --port <port>', 'use specified port (default: 8080)')
+    .option('-p, --port <port>', 'use specified port (default: 3210)')
     .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
     .action((dir = '.', { host, port }) => {
-        dev.dev(path.resolve(dir), { host, port })
+        new dev.Dev({ host, port }).start()
     })
 
 program
     .command('build [targetDir]')
     .description('build dir as static site')
-    .option('-d, --dest <outDir>', 'specify build output dir (default: ./dist)')
+    .option('-d, --dest <outDir>', 'specify build output dir (default: ./build)')
     .action((dir = '.', { dest }) => {
         const outDir = dest ? path.resolve(dest) : null
-        build.build(path.resolve(dir), { outDir })
+        new build.Build({ outDir }).build()
     })
 
 program
