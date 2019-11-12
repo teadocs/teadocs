@@ -40,7 +40,7 @@
     "koa-socket": "^4.4.0",
     "koa-static": "^4.0.3",
     "marked": "^0.4.0",
-    "open": "^0.0.5",
+    "open": "^6.0.0",
     "semver": "^5.5.0"
   },
   "engines": {
