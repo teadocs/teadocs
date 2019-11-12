@@ -41,7 +41,8 @@
     "koa-static": "^5.0.0",
     "marked": "^0.7.0",
     "open": "^7.0.0",
-    "semver": "^6.3.0"
+    "semver": "^6.3.0",
+    "update-notifier": "^3.0.1"
   },
   "engines": {
     "node": ">=8"
