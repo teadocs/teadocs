@@ -15,7 +15,7 @@ if (!semver.satisfies(process.version, requiredVersion)) {
 
 // Automatic notification of package updates 
 const updateNotifier = require('update-notifier')
-const pkg = require('./package.json')
+const pkg = require('../package.json')
 const notifier = updateNotifier({pkg})
 notifier.notify()
 
