@@ -13,6 +13,12 @@ if (!semver.satisfies(process.version, requiredVersion)) {
   process.exit(1)
 }
 
+// Automatic notification of package updates 
+const updateNotifier = require('update-notifier')
+const pkg = require('../package.json')
+const notifier = updateNotifier({pkg})
+notifier.notify()
+
 const path = require('path')
 const dev = require('../lib/dev')
 const build = require('../lib/build')
