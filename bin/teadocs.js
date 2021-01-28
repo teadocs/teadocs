@@ -35,17 +35,17 @@ program
   .description('start development server and listen for file changes automatically compiled.')
   .option('-p, --port <port>', 'use specified port (default: 3210)')
   .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
-  .action((dir = '.', { host, port }) => {
-    new dev.Dev({ host, port }).start()
+  .action((targetDir='.', { host, port }) => {
+    new dev.Dev(targetDir, { host, port }).start()
   })
 
 program
   .command('build [targetDir]')
   .description('build dir as static site')
   .option('-d, --dest <outDir>', 'specify build output dir (default: ./build)')
-  .action((dir = '.', { dest }) => {
+  .action((targetDir = '.', { dest }) => {
     const outDir = dest ? path.resolve(dest) : null
-    new build.Build({ outDir }).build()
+    new build.Build(targetDir, { outDir }).build()
   })
 
 program
