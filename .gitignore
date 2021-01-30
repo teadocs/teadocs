@@ -66,3 +66,6 @@ package-lock.json
 
 .yarn-lock.json
 yarn.lock
+
+# ide profile
+.idea
