@@ -40,7 +40,7 @@
     "koa-router": "^7.4.0",
     "koa-socket": "^4.4.0",
     "koa-static": "^5.0.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "open": "^7.0.0",
     "semver": "^6.3.0",
     "update-notifier": "^3.0.1"
